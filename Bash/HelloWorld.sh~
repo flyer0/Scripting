@@ -1,0 +1,5 @@
+#!/usr/bin/bash
+
+date +"Today is %A, a day in %B"
+
+exit
