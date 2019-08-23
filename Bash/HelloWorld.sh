@@ -2,6 +2,8 @@
 
 echo "Hello  World"
 date +"Today is %A, a day in %B"
+
+
 echo "Home "$PATH
 echo "UID "$UID
 echo "PWD "$PWD
