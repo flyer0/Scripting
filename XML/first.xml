@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zeichnung> <!-- Kommentar-->
+    <linie>
+        <anfangspunk x="1" y="0"/>
+        <endpunkt x="1" y="1"/>
+    </linie>
+</zeichnung>
