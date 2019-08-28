@@ -1,0 +1,22 @@
+<grammar xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary ="http://www.w3.org/2001/XMLSchema -datatypes">
+<start>
+    <element name="zeichnung">
+        <zeroOrMore>
+            <element name="linie">
+            <ref name="PunktTyp"/>
+            </element>
+        </zeroOrMore>
+    </element>
+</start>
+</grammer>
+
+start =
+    element zeichnung {
+        element linie{
+            element anfangspunkt { PunktTyp },
+            element enpunkt { PunktTyp}
+        }*
+    }
+PunktTyp =
+    attribute x {xsd:double},
+    attribute y {xsd:double}
