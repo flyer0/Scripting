@@ -1,0 +1,14 @@
+<!--XML element based-->
+<sammlung>
+    <energietraeger>
+        <name>Erdöl</name>
+        <terajoul>
+            <jahr>2000</jahr>
+            <wert>1234</wert>
+        </terajoul>
+        <terajoul>
+            <jahr>2000</jahr>
+            <wert>1234</wert>
+        </terajoul>
+    </energietraeger>
+</sammlung>
