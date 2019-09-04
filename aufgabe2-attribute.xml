@@ -1,0 +1,4 @@
+<energieverbrauch version='1.o'>
+    <energieträger jahr='2009' name='Erdöl' terajoule='123'/>
+    <energieträger jahr='2008' name='Gas' terajoule='153'/>
+</energieverbrauch>
