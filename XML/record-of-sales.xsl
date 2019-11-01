@@ -12,7 +12,11 @@
 <xsl:template match="prodsale">   
   <!--processing for each sale-->
   <xsl:choose>
+<<<<<<< HEAD
     <xsl:when test=". >= 100">
+=======
+    <xsl:when test=". >= 10">
+>>>>>>> 6ce10cec7fbee74221b3a548a5a4f06da9a2fca6
       <xsl:value-of select="../@num"/> <!--use parent's attr-->
       <xsl:text> - </xsl:text>
       <xsl:value-of select="id(@idref)"/> <!--go indirect-->
