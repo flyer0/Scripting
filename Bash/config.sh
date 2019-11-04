@@ -1,8 +1,9 @@
 #!/bin/bash
 
 #Create Role
-R_NAME="USER"
+R_NAME=("USER" "ADMIN")
 R_DESCRIPTION="User Rights"
+
 
 
 #Create User

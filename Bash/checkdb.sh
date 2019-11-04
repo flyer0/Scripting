@@ -5,6 +5,7 @@
 
 #-------------------ROLE---------------------------------------------------------------
 #Check if Role is in DB
+echo ${R_NAME[1]}
 role=$(mysql -D userreg -u root  -se "select name FROM role WHERE name = '$R_NAME'")
 if [ -z "$role" ]
 then
