@@ -72,4 +72,11 @@ fi
 
 done
 
-
+#---------------------------------------------Ausgabe -------------------------------------------------
+echo "-------------------- AUSGABE ---------------------"
+mysql -u root<<EOFMYSQL
+use userreg;
+SELECT U.first_name,U.last_name, R.name FROM app_user U
+INNER JOIN user_role UR ON U.id = UR.user_id
+INNER JOIN role R ON UR.user_id = role_id;
+EOFMYSQL
