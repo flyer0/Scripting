@@ -5,4 +5,8 @@ print(line.split(':'));
 name, value, desc = line.split(':')
 print(value);
 
+while
+
+
+
 
