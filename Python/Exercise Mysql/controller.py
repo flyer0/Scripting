@@ -4,19 +4,23 @@ from user import *
 
 connect = mysqlconnector.MysqlConnection()
 
-#Add role to mariadb
-#Check if role is already in db
+#-----------------------ROLE-----------------------------------------------------------------
+
 
 for idx,line in enumerate(R_NAME):
     role = "select name FROM role WHERE name = '%s'" % line
     value = connect.mysql_query(role)
     msg = value.fetchone()
+    #Check if role is already in db
     if not msg:
         query = "INSERT INTO role (description,name) VALUE ('%s','%s')" % (R_DESCRIPTION[idx],line)
         connect.mysql_query(query)
         print("Role %s added to DB!" % line)
     else:
         print(R_DESCRIPTION[idx] + " Role already in DB...")
+
+#---------------------USER-------------------------------------------------------------------
+
 
 """
 query = "SELECT first_name, last_name FROM app_user;"
