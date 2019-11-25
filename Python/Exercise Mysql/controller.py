@@ -21,7 +21,9 @@ for idx,line in enumerate(R_NAME):
 
 #---------------------USER-------------------------------------------------------------------
 
-
+for idx,line in enumerate(U_UNAME):
+    role = "select username FROM app_user WHERE username= '%s'}" % line
+    print(role)
 """
 query = "SELECT first_name, last_name FROM app_user;"
 result = connect.mysql_query(query)
