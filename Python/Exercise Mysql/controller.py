@@ -22,8 +22,20 @@ for idx,line in enumerate(R_NAME):
 #---------------------USER-------------------------------------------------------------------
 
 for idx,line in enumerate(U_UNAME):
-    role = "select username FROM app_user WHERE username= '%s'}" % line
+    role = "select username FROM app_user WHERE username= '%s'" % line
     print(role)
+    value = connect.mysql_query(role)
+    msg = value.fetchone()
+    print(msg)
+    #Check if User is already in db
+    if not msg:
+        query = "INSERT INTO app_user (account_expired,email,first_name,last_name,password,username) VALUE ('%s','%s','%s','%s','%s','%s')" % (U_EXPIRE[idx],U_EMAIL[idx],U_FIRSTNAME[idx],U_NAME[idx],U_PASS[idx],U_UNAME[idx])
+        print(query)
+    else:
+        print(U_FIRSTNAME[idx] + " " + U_NAME[idx] + " is already in DB...")
+
+#------------------ADD ROLE TO USER-------------------------------------------------------------------
+
 """
 query = "SELECT first_name, last_name FROM app_user;"
 result = connect.mysql_query(query)
