@@ -11,3 +11,4 @@ len(content),content[:100]
 import re
 
 re.findall(r'0\d{2} d{3} \d{2} \d{2}',content.decode())
+print(re)
