@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-echo "Hello  Worlds"
+echo "Hello  World"
 date +"Today is %A, a day in %B"
 
 
